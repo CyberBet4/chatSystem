@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat System</title>
+		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" href="resources/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="resources/css/animate.min.css">
+	</head>
+	<body>
+		
+		<div class="cont">		
+		<aside class="option" id="option">
+			<ul>
+				<a href="#"><li><i class="fa fa-home"> </i> Home</li></a>
+				<a href="#"><li><i class="fa fa-user"> </i> Profile</li></a>
+				<a href="#"><li><i class="fa fa-sign-out"> </i> Logout</li></a>
+			</ul>
+		</aside>
+	<div class="chatSystem">
+		<header class="main-title" id="title">
+		
+		<i class="fa fa-bars" title="Options" id="more" style="cursor: pointer; transition: all 0.2s ease; float: left; font-size: 45px; margin-right: 2rem;"></i>
+		<i style="position: relative; display: block; float: left; margin-right: 5px; width: 60px;"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path class="chat" width="50px" height="50px" style="fill:#FFD24D;" d="M256,0C114.615,0,0,114.615,0,256.001c0,53.507,16.426,103.174,44.497,144.252L10.871,501.129 l100.877-33.625C152.826,495.574,202.491,512,256,512c141.385,0,256-114.615,256-255.999C512,114.615,397.385,0,256,0z"/> <path class="chat" width="50px" height="50px" style="fill:#1B4145; width: 50px; height: 50px;" d="M375.744,332.549c-19.326-19.325-40.026-35.594-40.026-35.594l-30.158,30.159L184.887,206.44 	l30.159-30.158c0,0-16.268-20.7-35.594-40.026c-19.326-19.325-40.025-35.594-40.025-35.594s-36.137,33.244-38.567,59.61 	c-3.252,35.293,34.106,99.459,92.758,158.111s122.817,96.01,158.11,92.757c26.367-2.431,59.61-38.566,59.61-38.566 	S395.069,351.876,375.744,332.549z"/></svg></i>
+			<h3 style="margin-top: 3px;">Chat System</h3>
+			<p style="font-size: 12px; margin-top: -10px;">Your status...</p>
+			<button id="deleted" class="animated" onmousedown="trashAttention()" onmouseup="remtrashAttention()" title="delete chat" style="float: right; margin-top: -4rem; margin-right: 3rem; font-size: 45px;"><i class="fa fa-trash-o" ></i></button>
+		</header>
+
+		<!--#ffd24d    #1b4145-->
+		<div class="main-body">
+
+			<ul id="list" class="messages"></ul>
+			
+			<section id="adjust" style="position: fixed; bottom: 2rem; width: 99%; display: block;">
+			<div style="position: relative; display: block; width: 100%;">
+				<input id="text" type="text" autofocus="true" placeholder="Enter a message..">
+				<button id="send"><i class="fa fa-send" style="font-size: 30px; color: #1d4245;"></i></button>
+			</div>
+			</section>
+			
+		</div>
+	</div>
+	</div>
+		<script src="resources/js/mainActivity.js"></script>
+	</body>
+</html>

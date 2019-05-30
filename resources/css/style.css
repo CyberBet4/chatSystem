@@ -1,0 +1,115 @@
+.main-title{background: dogerblue;
+			border: none;
+			outline: none;
+			padding-left: 2rem;
+			padding: 1rem;
+			color: white;
+			height: 50px;
+			display: block;
+			width: 100%;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			font-family: "Tahoma", monospace;
+			box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+			margin-top: -0.5rem;
+			margin-left: -0.5rem;
+			margin-right: 0.5rem;
+			background: #0a24a5;
+			z-index: 99;
+			}
+			
+	body{background: #0a4fa538;}
+.main-body{margin-top: 10rem;}
+
+
+.messages:empty:after{content: 'Nothing here, Start a message..';
+						color: #565656;
+						text-align: center;
+						font-family: "Verdana", monospace}
+.messages li{border-radius: 10px;
+	background: #fff8cac7;
+	display: block;
+	margin-left: -2rem;
+	width: 40%;
+	margin-bottom: 1rem;
+	padding: 1.3rem 2rem;
+	}
+	
+#deleted{	appearance: none;
+	--webkit-appearance: none;
+	--moz-appearance: none;
+	--o-appearance: none;
+	color: #fff;
+	border: none;
+	outline: none;
+	background: none;
+	--ms-appearance: none;
+	transition: all 0.2s ease-in;
+	cursor: pointer;
+	border: none;}	
+
+#deleted:hover{color: #ffd24d;}
+	
+input{border: none;
+	width: 90%;
+	padding: 2rem;
+	position: relative;
+	border-radius: 50px;
+	outline: none;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	transition: all 0.3s ease}
+
+input:hover{box-shadow: 0px 3px 5px rgba(0,0,0,0.5);}
+
+.cont{display: grid;
+		grid-template-columns: 100%;
+		}
+
+#send{position: absolute;
+	right: 0;
+	appearance: none;
+	--webkit-appearance: none;
+	--moz-appearance: none;
+	--o-appearance: none;
+	--ms-appearance: none;
+	border: none;
+	outline: none;
+	width: 100px;
+	float: right;
+	background: #ffd24d;
+	box-shadow: -3px 0px 5px rgba(0,0,0,0.15);
+	transition: all 0.3s linear;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	height: 79px;
+	top: 0;}
+	
+#send:hover{box-shadow: -3px 0px 5px rgba(0,0,0,0.3);
+			background: #fbc934;}
+			
+.option{margin-left: -10px;
+		margin-top: -10px;
+		margin-bottom: 0px;
+		background: #172e2f;
+		width: 100%;
+		display: none;
+		box-shadow: 0px 3px 5px rgba(0,0,0,0.3)}
+		
+#more:hover{color: #ffd24d;}
+
+.option ul li{list-style: none;
+			text-decoration: none;
+			font-weight: bold;
+			font-family: arial, sans-serif;
+			color: #1a494e;
+			text-align: center;
+			padding: 15px;
+			transition: all 0.2s linear;}
+
+.option ul{padding: 0px;}
+			
+.option ul li:hover{background: #ffd24d;}
+			
+.option ul a{text-decoration: none;}	
+
+	
